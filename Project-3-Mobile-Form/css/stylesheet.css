@@ -1,0 +1,148 @@
+/* ================================= 
+  Global Layout Set-up
+==================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================= 
+  Base Layout Syles
+==================================== */
+
+/* ---- Base Layout Styles ---- */
+
+header {
+    display: block;
+    text-align: center;
+    background-color: rgb(47, 57, 70);
+    color: white;
+    padding: 1.5em;
+}
+
+.body {
+    margin: 1em;
+}
+
+.top {
+    padding: 1em;
+    text-align: center;
+}
+
+.top h2 {
+    padding-bottom: .3em;
+}
+
+.top p {
+    padding-bottom: 1em;
+}
+
+.thick {
+    display: block;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: .2em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+hr {
+    display: block;
+    background-color: black;
+    border-style: solid;
+}
+
+form {
+    padding-bottom: 1em;
+}
+
+legend {
+    padding-bottom: .7em;
+}
+
+input, 
+select,
+textarea {
+    background-color: rgb(239, 240, 241);
+    border: none;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+
+.focus {
+    width: 100%;
+}
+
+.button {
+    background-color: rgb(78, 186, 181);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+footer {
+    padding: 2em 0;
+    text-align: center;
+}
+
+/* ---- Form Responsive Layout ---- */
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0;
+    outline: 2px solid rgb(47, 57, 70);
+    border-radius: 5px;
+}
+
+.options:focus {
+    outline: 0;
+}
+
+/* ---- Font Styles ---- */
+
+h2 {
+    margin-top: 1em;
+}
+
+p {
+    color: rgb(103, 119, 134);
+    font-weight: 300;
+    padding: .2em 0;
+}
+
+legend {
+    color: rgb(103, 119, 134);
+}
+
+input::placeholder {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.footer,
+input::placeholder {
+    color: rgb(198, 203, 205);
+    font-style: italic;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    .body {
+        margin: 0 20%;
+    }
+}
