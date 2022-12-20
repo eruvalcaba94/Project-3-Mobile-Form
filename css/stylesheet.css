@@ -8,6 +8,8 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 /* ================================= 
   Base Layout Syles
 ==================================== */
@@ -166,13 +168,21 @@ input::placeholder {
         align-items: center;
     }
 
+    .wrapper p:last-of-type {
+        justify-content: flex-start;
+    }
+
+    .wrapper label:last-of-type {
+        width: 25%;
+    }
+
     .wrapper .focus {
         width: 75%;
     }
 
     .wrapper .zip_focus {
         display: block;
-        width: 25%;
+        width: 20%;
     }
 
 }
